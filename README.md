@@ -6,4 +6,4 @@ Channel 1: Signal controlled transmission recording (every tx will be an ogg or 
 
 Channel 2: Continuous daily recording. File rotated at 00:00.
 
-The script has been developed especially for a Rohde und Schwarz XU251 (Series 200 rack) airband radio and a PC with LPT port, but it's easy to implement on a Raspberry PI or any other device (audio input and gpio required!).
+The script has been developed for a Rohde und Schwarz XU251 (Series 200 rack) airband radio and a PC with LPT port, but it's easy to implement on a Raspberry PI or any other device (audio input and gpio required!).

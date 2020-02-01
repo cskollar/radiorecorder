@@ -18,7 +18,6 @@ import subprocess
 import threading
 import parallel
 import logging
-#import sox
 
 #tx recorder thread
 def recorder_tx(name, stop):
@@ -32,8 +31,6 @@ def recorder_tx(name, stop):
       my_env = os.environ.copy()
       my_env["AUDIODEV"] = inputdevice_tx
       subprocess.run(["/usr/bin/sox", "-d", "-c", "1", "-C", quality, "-t", codec, txfile], env=my_env, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-#      soxargs = ['-d', '-c', '1', '-C', quality, '-t', codec, txfile]
-#      sox.core.sox(soxargs)
       if stop():
         logging.info("Recoder-TX: stopped")
         break
@@ -107,9 +104,3 @@ if __name__ == '__main__':
     logging.basicConfig(format=format, level=logging.INFO,
 			datefmt="%H:%M:%S")
     main()
-
-#parport usable pins
-#p.getInError()
-#p.getInSelected()
-#p.getInPaperOut()
-#p.getInBusy()

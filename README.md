@@ -1,6 +1,6 @@
 # Radio Recorder
 
-This script helps to record analog audio streams (a line-in audio output of an airband radio station in this case) with two parallel channels.
+This script helps to record analog audio streams (a line level audio output of an airband radio station in this case) with two parallel channels.
 
 Channel 1: Signal controlled transmission recording (every tx will be an ogg or mp3 file on the disk). The signal is a TTL level output of the radio device (for example: the squelch status output). Recording starts when LPT port pin13 (SELECT) goes to HIGH state, and stops when the pin goes to LOW.
 

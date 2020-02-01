@@ -1,4 +1,4 @@
-#Radio Recorder
+# Radio Recorder
 
 This script helps to record analog audio streams (a line-in audio output of an airband radio station in this case) with two parallel channels.
 
